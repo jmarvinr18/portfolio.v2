@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cell{
+    border: 1px solid black;
+}
+
+.figure{
+
+}
+
+img{
+	padding-top: 0;
+	width: 700px;
+	height: 200px;
+	float: left;
+
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+  > .col,
+  [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+.list-group{
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.list-group > li {
+	width: 350px;
+	
+}
+
+nav > .form-inline{
+	width: 350px;
+
+}
+
+form{
+	margin-left: 3px;
+}
+
+.card{
+	margin-top: 15px;
+	width: 350px;
+}
+
+.card-img-top{
+	float: left;
+	height: 100px;
+	width: 100px;
+	margin-left: 10px;
+	margin-top: 10px;
+
+}
+
+.comments{
+	width: 700px;
+
+	
+	
+}
+
+.comments >.card-body{
+	float: left;
+
+}
+
+.credentials{
+	background-color: lightgrey;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px
+}
+
+.next{
+	float: right;
+}
+
+.jumbotron{
+	padding-bottom: 0;
+}
