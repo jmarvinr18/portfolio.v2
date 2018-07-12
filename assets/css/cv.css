@@ -100,7 +100,7 @@ ul{
 }
 
 body{
-    position: relative;
+    /*position: relative;*/
 }
 .bg-top{
     /*background-color: lightgrey;*/
@@ -346,7 +346,7 @@ main{
 
 body{
 
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
 }
 .bg-top{
     background-image: url(../images/typewriter.jpg);
