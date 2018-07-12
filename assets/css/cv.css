@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.row::after {
+/*.row:after {
     content: "";
     clear: both;
     display: table;
-}
+}*/
+
+
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -17,30 +19,61 @@ html {
 }
 
  html, body {
-   overflow-x: hidden;
+   /*overflow-x: hidden;*/
  }
 
 .header {
-    background-color: #9933cc;
+    /*background-color: #9933cc;*/
     color: #ffffff;
     padding: 15px;
+    text-align: right;
+/*    margin-right: 80px;
+    margin-top: 20px;*/
 }
 
+a:hover{
+    /*background-color: lightblue;*/
+    padding:        5px;
+    border-bottom: 3px solid blue;
+/*    text-align: right;
+    margin-right: 80px;
+    margin-top: 20px;*/
+
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+
+
+}
+
+a{
+     text-decoration: none;
+     color: white;
+}
+
+ul{
+    background-color: rgba(37,38,39,0.5);
+}
 .photo{
 
-
-    padding: 8px;
+    /*float: left;*/
+    /*padding: 8px;*/
     margin-bottom: 7px;
+    margin: auto;
     /*background-color: #33b5e5;*/
     background-image: url(../images/profile-pic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /*min-height: 410px;*/
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    min-height: 300px;
+    min-width: 250px;
+    /*color: #ffffff;*/
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
 }
 
-/*.fb{
+.fb{
     background-image: url(../images/fb.jpg);
     background-size: cover;
     height: 50px;
@@ -55,7 +88,7 @@ html {
     width: 50px;
     margin: auto;
 }
-*/
+
 .content{
     padding: 8px;
     margin-bottom: 7px;
@@ -63,31 +96,192 @@ html {
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     text-align: center;
+    font-size: 10px;
+}
+
+body{
+    position: relative;
+}
+.bg-top{
+    /*background-color: lightgrey;*/
+    background-image: url(../images/typewriter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*float: left;*/
+    height: 500px;
+
 
 }
 
-.aside {
-    background-color: #33b5e5;
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+.bg-bottom{
+
+      top: 90px;
+    left: 205px;
+  position: absolute;
+  /*float: left;*/
 }
+
+
 .footer {
-    background-color: #0099cc;
+    background-color: rgba(232,232,232);
     color: #ffffff;
     text-align: center;
     font-size: 12px;
     padding: 15px;
+
 }
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
     /*left: 100%;*/
 }
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
+
+/* For tablets:-------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) /*and (max-device-width : 1024px)*/{
+ 
+.photo{
+
+    padding: 8px;
+    margin-bottom: 7px;
+    /*background-color: #33b5e5;*/
+    background-image: url(../images/profile-pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    min-width: 360px;
+    color: #ffffff;
+
+}
+
+
+main{
+
+    position: relative;
+}
+
+.content{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #386150;;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
+    font-size: 10px;
+    margin: auto;
+    position: absolute;
+    top: 680px;
+    left: -100px;
+    width: 600px;
+    height: 200px;
+}
+
+.socialmed{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #0099cc;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: left;
+    font-size: 10px;
+    margin: auto;
+    position: absolute;
+    top: 890px;
+    left: -100px;
+    width:600px;
+
+}
+.fb{
+    background-image: url(../images/fb.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-left: 230px;
+    float: left;
+    
+}
+
+.ig{
+    background-image: url(../images/ig.jpg);
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+/*    margin: auto;*/
+    margin-top: 5px;
+    float: left;
+    margin-right: 5px;
+}
+
+.linkedin{
+    background-image: url(../images/linkedin.jpg);
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+/*    margin: auto;*/
+    margin-top: 5px;
+    float: left;
+
+}
+
+.cv{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #0099cc;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
+    font-size: 10px;
+    margin: auto;
+    position: absolute;
+    top: 965px;
+    left: -100px;
+    width:600px;
+
+}
+
+.description, .description > h3,
+.description > p {
+    padding: 3px;
+}
+
+.container{
+
+    margin: 150px 0px 50px 0;
+    background-color: white;
+
+    /*position: absolute;*/
+}
+
+
+body{
+    /*position: relative;*/
+}
+.bg-top{
+    /*background-color: lightgrey;*/
+    background-image: url(../images/typewriter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*float: left;*/
+    height: 500px;
+    /*width: 900px;*/
+
+
+}
+
+
+.bg-bottom{
+
+      top: 90px;
+    left: 205px;
+  position: absolute;
+  /*float: left;*/
+}
+
+.footer{
+    clear: both;
+}
+
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}
@@ -101,8 +295,147 @@ html {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 }
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
+
+
+ /* For desktop: ---------------------------------------------------------------*/
+
+@media only screen and (min-width: 961px) {
+
+.photo{
+
+    /*padding: 8px;*/
+    margin-bottom: 7px;
+    /*background-color: #33b5e5;*/
+    background-image: url(../images/profile-pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    min-width: 360px;
+}
+
+main{
+
+    position: relative;
+}
+
+.content{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #386150;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: left;
+    position: absolute;
+    top: 280px;
+    left: 320px;
+    padding-bottom: 100px;
+
+}
+
+.description, .content > h1, .description > h3,
+.content > p, .description > p {
+    padding: 3px;
+}
+.container{
+
+    margin: 150px 0px 150px 0px;
+    background-color: white;
+    z-index: 1;
+}
+
+
+body{
+
+    background-color: lightgrey;
+}
+.bg-top{
+    background-image: url(../images/typewriter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    z-index: 0;
+
+}
+
+
+.bg-bottom{
+
+      top: 90px;
+    left: 205px;
+    margin-top:0;
+}
+
+.footer{
+    height: 368px;
+    width: 100%;
+    background-color: red;
+}
+
+
+.socialmed{
+    padding: 10px;
+    margin-bottom: 7px;
+    background-color: #0F8B8D;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: absolute;
+    top: 490px;
+    left: 320px;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 400px;
+    margin: auto;
+
+}
+.fb{
+    background-image: url(../images/fb.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-left: 120px;
+    float: left;
+    
+}
+
+.ig{
+    background-image: url(../images/ig.jpg);
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+/*    margin: auto;*/
+    margin-top: 5px;
+    float: left;
+    margin-right: 5px;
+}
+
+.linkedin{
+    background-image: url(../images/linkedin.jpg);
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+/*    margin: auto;*/
+    margin-top: 5px;
+    float: left;
+
+}
+
+.cv{
+    padding: 10px;
+    margin-bottom: 7px;
+    background-color: #0F8B8D;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: absolute;
+    top: 570px;
+    left: 320px;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+
+}
+   
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
