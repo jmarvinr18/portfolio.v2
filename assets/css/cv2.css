@@ -14,132 +14,375 @@
 }
 
 
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
+/* For mobile: ______________________________________________________________________________________*/
 
 
-/* For tablets: ______________________________________________________________________________________*/
-
-/*@media only screen and (min-width: 768px) {
-
-
-.header {
-
-    margin-top: 70px;
-    background-color: rgba(178,11,91,0.3); 
-    padding: 15px;
-
-    text-align: center;
-
-}
-
-a:hover{
-
-    padding: 5px;
-    border-bottom: 3px solid blue;
-
-
-}
-
-li{
-    list-style: none;
-    display: inline-block;
-    padding: 5px;
-
-
-}
-
-a{
-     text-decoration: none;
-     color: white;
-     font-weight: bolder; 
-}
 .bg-top{
 
-    background-image: url(../images/typewriter.jpg);
+    background-image: url(../images/my-dp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 245px;
+/*    background-attachment: fixed;
+    background-position: center;*/
 
 }
+
+
+h1{
+    font-size: 20px;
+}
+
 
 
 .bg-bottom{
-   
+
+     /*top: 10px;*/
+/*    left: 205px;*/
+    margin-top:0;
+    background-color: #8FC8B1;
 }
+
 
 .con-column{
 
 }
-.socialmed{
 
-    top: -250px;
-    position: relative;
-    margin-top: 10px 10px 10px 10px;
-    min-height: 450px;
-    background-color: rgba(162,13,59,0.3);
-    padding-top: 110px;
+.socialmed-desktop{
+    display: none;
+}
 
+.socialmed-tablet{
 
+margin-left: 10px;
 
 }
 
-.socialmed > a {
+.socialmed-tablet > a {
     padding: 10px;
 
 }
-.fb{
+.socialmed-tablet > ul > a > .fb{
     background-image: url(../images/fb.jpg);
     background-size: cover;
-    height: 60px;
-    width: 60px;
-    margin: auto;
-    top: 10px;
+    height: 35px;
+    width: 35px;
+    top: 100px;
+
+
+
 
     
 }
 
-.ig{
+.socialmed-tablet > ul > a > .ig{
     background-image: url(../images/ig.jpg);
     background-size: cover;
-    height: 60px;
-    width: 60px;
-    margin: auto;
-    top: 10px;
+    height: 30px;
+    width: 30px;
+
 
 }
 
-.linkedin{
+.socialmed-tablet > ul > a > .linkedin{
     background-image: url(../images/linkedin.jpg);
     background-size: cover;
-    height: 60px;
-    width: 60px;
-    margin: auto;
-    top: 10px;
+    height: 30px;
+    width: 30px;
 
 
 }
+
+.socialmed-tablet > ul > a > li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    text-align: right;
+
+}
+
 
 .container{
 
-    top: -300px;
-    position: relative;
-    margin: auto;
-    min-height: 450px;
+    background-color: white;
+    border: 4px solid #004F2D;
 
 }
+
+
 
 .menu{
 
  
 }
 .main{
+    margin: auto;
+
+}
+.photo{
+
+    margin: auto;
+    background-image: url(../images/profile-pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 360px;
+}
 
 
-    min-height: 450px;
+.contact-details{
+    background-color: #386150;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
+    padding: 8px;
+    color: #ffffff;
+
+
+}
+
+.email, .mobile{
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.contact-me{
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+.content{
+
+    /*left: -105px;*/
+    padding: 8px;
+
+    background-color: #386150;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
+    /*position: relative;*/
+    padding-bottom: 70px;
+    margin-bottom: 10px;
+    /*min-width: 550px;*/
+
+}
+
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 10px;
+          /*left: -105px;*/
+    /*min-width: 550px;*/
+    /*position: relative;*/
+}
+
+
+.education{
+
+    /*top: -280px;*/
+    /*position: relative;*/
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    /*float: right;*/
+    /*margin-left: 5px;*/
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.foot-note{
+    background-color: #386150;
+    height: 200px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.description, .content > h1, .description > h3,
+.content > p, .description > p {
+    padding: 3px;
+}
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/*  .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
+}
+*/
+
+/* For tablets: ______________________________________________________________________________________*/
+
+@media only screen and (min-width: 768px) and (max-width: 961px) {
+
+
+.bg-top{
+
+    background-image: url(../images/black-watch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+
+    /* Full height */
+    /*height: 100%; */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+
+
+
+.bg-bottom{
+
+     top: 10px;
+    left: 205px;
+    margin-top:0;
+    background-color: #8FC8B1;
+}
+
+
+.con-column{
+
+}
+
+.socialmed-desktop{
+    display: none;
+}
+
+.socialmed-tablet{
+
+    /*top: -250px;*/
+
+    /*bottom: 10px;*/
+   /* left: 430px;
+    position: relative;*/
+    /*margin-top: 10px 10px 10px 10px;*/
+    /*min-height: 450px;*/
+    /*background-color: rgba(162,13,59,0.3);*/
+    /*padding: 10px;*/
+    /*margin: auto;*/
+
+    margin-left: 430px;
+
+
+
+
+}
+
+.socialmed-tablet > a {
+    padding: 10px;
+
+}
+.socialmed-tablet > ul > a > .fb{
+    background-image: url(../images/fb.jpg);
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+    top: 100px;
+    
+}
+
+.socialmed-tablet > ul > a > .ig{
+    background-image: url(../images/ig.jpg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+
+
+}
+
+.socialmed-tablet > ul > a > .linkedin{
+    background-image: url(../images/linkedin.jpg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+
+
+}
+
+.socialmed-tablet > ul > a > li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    text-align: right;
+
+}
+
+
+.container{
+
+    top: -300px;
+    background-color: white;
+    /*min-height: 10px;*/
+    position: relative;
+    border: 4px solid #004F2D;
+    /*background-color: blue;*/
+}
+
+
+
+.menu{
+
+ 
+}
+.main{
     margin: auto;
 
 }
@@ -152,18 +395,113 @@ a{
     min-height: 450px;
 }
 
-.content{
+
+.contact-details{
+    background-color: #386150;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: left;
     padding: 8px;
-    margin-top: 15px;
+    color: #ffffff;
+/*    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;*/
+        left: -105px;
+    min-width: 550px;
+    position: relative;
+
+}
+
+.email, .mobile{
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.contact-me{
+    margin-bottom: 5px;
+
+}
+
+.content{
+
+    left: -105px;
+    padding: 8px;
+    /*margin-bottom: 7px;*/
     background-color: #386150;
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     text-align: center;
-    padding-bottom: 100px;
     position: relative;
-    width: 725px;
-    left: -195px;
+    padding-bottom: 70px;
+    margin-bottom: 10px;
+/*    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;*/
+    min-width: 550px;
 
+}
+
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+/*  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;*/
+  font-size: 15px;
+  margin-top: 10px;
+          left: -105px;
+    min-width: 550px;
+    position: relative;
+}
+
+
+.education{
+
+    top: -280px;
+    position: relative;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 .foot-note{
@@ -191,9 +529,280 @@ a{
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
-}*/
+}
 
 /* For desktop: __________________________________________________________________________________________*/
+
+@media only screen and (min-width: 961px) and (max-width: 1500px){
+
+
+
+
+.bg-top{
+
+    background-image: url(../images/black-watch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+
+    /* Full height */
+    /*height: 100%; */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+
+.bg-bottom{
+
+     top: 10px;
+    left: 205px;
+    margin-top:0;
+    background-color: #8FC8B1;
+}
+
+.socialmed-tablet{
+    display: none;
+}
+.socialmed-desktop{
+
+    /*top: -250px;*/
+
+    top: 50px;
+    left: 180px;
+    position: relative;
+    /*margin-top: 10px 10px 10px 10px;*/
+    /*min-height: 450px;*/
+    /*background-color: rgba(162,13,59,0.3);*/
+    /*padding: 10px;*/
+    /*margin: auto;*/
+
+
+
+}
+
+.socialmed-desktop > a {
+    padding: 10px;
+
+}
+.socialmed-desktop > ul > a > .fb{
+    background-image: url(../images/fb.jpg);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+
+
+
+
+    
+}
+
+.socialmed-desktop > ul > a > .ig{
+    background-image: url(../images/ig.jpg);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+
+
+}
+
+.socialmed-desktop > ul > a > .linkedin{
+    background-image: url(../images/linkedin.jpg);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+
+
+}
+
+.socialmed-desktop > ul > a > li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+
+}
+
+ a{
+     text-decoration: none;
+     color: white;
+     font-weight: bolder; 
+}
+
+.con-column{
+
+}
+
+.container{
+
+    top: -300px;
+    background-color: white;
+    /*min-height: 10px;*/
+    position: relative;
+    border: 4px solid #004F2D;
+    /*background-color: blue;*/
+}
+
+
+/* Style buttons */
+
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.menu{
+
+ 
+}
+.main{
+
+/*    min-height: 50px;
+    margin: auto;
+    background-color: green;
+    margin-left: 30px;*/
+
+    
+
+
+}
+.photo{
+
+
+    margin: auto;
+    background-image: url(../images/profile-pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 430px;
+}
+
+
+.contact-details{
+    background-color: #386150;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: left;
+    padding: 8px;
+    color: #ffffff;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.email, .mobile{
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.contact-me{
+    margin-bottom: 5px;
+}
+
+.content{
+
+    left: -65px;
+    padding: 8px;
+    /*margin-bottom: 7px;*/
+    background-color: #386150;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: left;
+    /*position: absolute;*/
+    /*min-width: 500px;*/
+    /*top: 80px;*/
+    /*left: 520px;*/
+    /*float: right;*/
+    padding-bottom: 70px;
+    margin-bottom: 10px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border
+
+}
+
+.description, .content > h1, .description > h3,
+.content > p, .description > p {
+    padding: 3px;
+}
+
+
+.education{
+
+    top: -280px;
+    position: relative;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+    
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) 
+/*@media only screen and (min-width: 992px) {
+
+
 
 .header {
 
@@ -229,13 +838,10 @@ a{
 
 .bg-top{
 
-
-
     background-image: url(../images/black-watch.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 1500px;
-
 }
 
 
@@ -247,10 +853,61 @@ a{
 }
 
 
+.socialmed-tablet{
+
+    disp
+    /*top: -250px;*/
+    /*position: relative;*/
+    /*margin-top: 10px 10px 10px 10px;*/
+ /*   min-height: 450px;
+    background-color: rgba(162,13,59,0.3);
+    padding-top: 110px;
+
+
+
+}
+
+.socialmed-tablet > a {
+    padding: 10px;
+
+}
+.fb{
+    background-image: url(../images/fb.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    top: 10px;
+
+    
+}
+
+.ig{
+    background-image: url(../images/ig.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    top: 10px;
+
+}
+
+.linkedin{
+    background-image: url(../images/linkedin.jpg);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    top: 10px;
+
+
+}
+
+
 .container{
 
     top: -300px;
-    /*background-color: blue;*/
+    background-color: blue;
     min-height: 10px;
     position: relative;
 }
@@ -297,25 +954,6 @@ a{
 .content > p, .description > p {
     padding: 3px;
 }
-
-@media only screen and (min-width: 961px) {
-    
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
-
-/* Large devices (laptops/desktops, 992px and up) 
-/*@media only screen and (min-width: 992px) {
 
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
